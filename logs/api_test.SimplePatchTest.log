@@ -1,0 +1,4 @@
+[2022-08-15T20:41:38,471][INFO ][TestNG-test=APITest-1] -------Test: api_test.SimplePatchTest--------
+[2022-08-15T20:41:38,686][DEBUG][TestNG-test=APITest-1] Job is: Manufacturing Developer
+[2022-08-15T20:41:39,028][DEBUG][TestNG-test=APITest-1] {"job":"Manufacturing Developer","updatedAt":"2022-08-16T00:41:37.840Z"}
+[2022-08-15T20:41:39,048][INFO ][TestNG-test=APITest-1] -------Test End: api_test.SimplePatchTest------

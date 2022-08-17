@@ -1,0 +1,5 @@
+[2022-08-15T20:41:38,578][INFO ][TestNG-test=APITest-2] -------Test: api_test.SimplePostTest--------
+[2022-08-15T20:41:38,836][DEBUG][TestNG-test=APITest-2] Name is: Clotilde Kautzer
+[2022-08-15T20:41:38,836][DEBUG][TestNG-test=APITest-2] Job is: Principal Real-Estate Officer
+[2022-08-15T20:41:39,089][DEBUG][TestNG-test=APITest-2] {"name":"Clotilde Kautzer","job":"Principal Real-Estate Officer","id":"265","createdAt":"2022-08-16T00:41:37.898Z"}
+[2022-08-15T20:41:39,114][INFO ][TestNG-test=APITest-2] -------Test End: api_test.SimplePostTest------

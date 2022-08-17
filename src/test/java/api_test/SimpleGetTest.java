@@ -5,20 +5,16 @@ import io.restassured.http.Method;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class SimpleGetTest {
+public class SimpleGetTest extends BaseAPIClass {
 
-    private static final Logger LOGGER = LogManager.getLogger(SimpleGetTest.class);
 
     @Test
     public void getAllUsers() {
-        LOGGER.info("--------API Test: Get All Users---------");
 
         // Specify the base URL or endpoint of the REST API
        RestAssured.baseURI = "https://reqres.in/api/users";
@@ -41,6 +37,5 @@ public class SimpleGetTest {
         boolean emailExist = list.contains(expectedEmail);
         Assert.assertTrue(emailExist, expectedEmail + " does not exist");
 
-        LOGGER.info("--------End Test: Get All Users---------");
     }
 }
