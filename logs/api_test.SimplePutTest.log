@@ -1,5 +1,0 @@
-[2022-08-15T20:41:39,052][INFO ][TestNG-test=APITest-1] -------Test: api_test.SimplePutTest--------
-[2022-08-15T20:41:39,178][DEBUG][TestNG-test=APITest-1] Name is: Bryant Sanford
-[2022-08-15T20:41:39,179][DEBUG][TestNG-test=APITest-1] Job is: Customer Sales Specialist
-[2022-08-15T20:41:39,433][DEBUG][TestNG-test=APITest-1] {"name":"Bryant Sanford","job":"Customer Sales Specialist","updatedAt":"2022-08-16T00:41:38.246Z"}
-[2022-08-15T20:41:39,451][INFO ][TestNG-test=APITest-1] -------Test End: api_test.SimplePutTest------

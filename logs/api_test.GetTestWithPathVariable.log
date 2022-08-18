@@ -1,6 +1,0 @@
-[2022-08-15T20:41:34,493][INFO ][TestNG-test=APITest-1] -------Test: api_test.GetTestWithPathVariable--------
-[2022-08-15T20:41:37,162][DEBUG][TestNG-test=APITest-1] {}
-[2022-08-15T20:41:37,306][INFO ][TestNG-test=APITest-1] -------Test End: api_test.GetTestWithPathVariable------
-[2022-08-15T20:41:37,312][INFO ][TestNG-test=APITest-1] -------Test: api_test.GetTestWithPathVariable--------
-[2022-08-15T20:41:37,509][DEBUG][TestNG-test=APITest-1] {"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
-[2022-08-15T20:41:38,260][INFO ][TestNG-test=APITest-1] -------Test End: api_test.GetTestWithPathVariable------
