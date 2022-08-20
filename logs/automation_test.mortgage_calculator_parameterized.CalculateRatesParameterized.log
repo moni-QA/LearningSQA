@@ -1,0 +1,18 @@
+[2022-08-19T20:39:10,284][DEBUG][Forwarding newSession on session null to remote] -Dio.netty.processId: 4864 (auto-detected)
+[2022-08-19T20:39:10,356][DEBUG][Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
+[2022-08-19T20:39:10,356][DEBUG][Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false
+[2022-08-19T20:39:10,572][DEBUG][Forwarding newSession on session null to remote] Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[2022-08-19T20:39:10,572][DEBUG][Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[2022-08-19T20:39:10,772][DEBUG][Forwarding newSession on session null to remote] -Dio.netty.machineId: 64:5a:04:ff:fe:c6:8e:7a (auto-detected)
+[2022-08-19T20:39:18,692][INFO ][TestNG-test=mortgageCalculator-2] -------Test: automation_test.mortgage_calculator_parameterized.CalculateRatesParameterized--------
+[2022-08-19T20:39:18,700][DEBUG][TestNG-test=mortgageCalculator-2] Opening the URL: https://www.mortgagecalculator.org/
+[2022-08-19T20:39:22,125][DEBUG][TestNG-test=mortgageCalculator-2] Mouse Hover to the Rates Link
+[2022-08-19T20:39:22,414][DEBUG][TestNG-test=mortgageCalculator-2] Clicking on the Real APR link
+[2022-08-19T20:39:23,840][DEBUG][TestNG-test=mortgageCalculator-2] Waiting for the page to load
+[2022-08-19T20:39:24,041][DEBUG][TestNG-test=mortgageCalculator-2] Typing Home value: 200000
+[2022-08-19T20:39:24,401][DEBUG][TestNG-test=mortgageCalculator-2] Clicking on the $ as down payment: 
+[2022-08-19T20:39:24,669][DEBUG][TestNG-test=mortgageCalculator-2] Typing Home value: 15000
+[2022-08-19T20:39:25,221][DEBUG][TestNG-test=mortgageCalculator-2] Typing Home value: 3
+[2022-08-19T20:39:25,760][DEBUG][TestNG-test=mortgageCalculator-2] Click on the calculate button
+[2022-08-19T20:39:27,625][DEBUG][TestNG-test=mortgageCalculator-2] Validate the Real Apr rate is: 3.130%
+[2022-08-19T20:39:28,232][INFO ][TestNG-test=mortgageCalculator-2] -------Test End: automation_test.mortgage_calculator_parameterized.CalculateRatesParameterized------
