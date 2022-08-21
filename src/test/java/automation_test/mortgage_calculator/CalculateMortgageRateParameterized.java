@@ -1,20 +1,20 @@
-package automation_test.mortgage_calculator_parameterized;
+package automation_test.mortgage_calculator;
+
 import automation_test.BaseClass;
 import org.testng.annotations.Test;
 import page_objects.Home;
 import utilities.DateUtils;
 import utilities.SqlConnector;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class CalculateMortgageRateParameterized extends BaseClass {
-
-
-   @Test
+    @Test
     public void calculateMonthlyPayment() {
         String[] date = DateUtils.returnNextMonth();
         try {
-           ResultSet rs = SqlConnector.readData("select * from monthly_mortgage");
+            ResultSet rs = SqlConnector.readData("select * from monthly_mortgage");
             while (rs.next()) {
                 new Home(driver)
                         .typeHomePrice(rs.getString("homevalue"))
@@ -38,6 +38,4 @@ public class CalculateMortgageRateParameterized extends BaseClass {
             LOGGER.error("SQL Data Read Exception: " + e.getMessage());
         }
     }
-
-
 }

@@ -1,22 +1,19 @@
 package automation_test.mortgage_calculator;
 
+import automation_test.BaseClass;
 import command_providers.ActOn;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import utilities.ScreenCapture;
-
 import java.io.IOException;
-import java.time.Duration;
+
 
 public class CalculateRealAprRate {
 
@@ -33,57 +30,59 @@ public class CalculateRealAprRate {
     WebDriver driver;
 
     @BeforeMethod
-    public void openBrowser(){
+    public void openBrowser() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         ActOn.browser(driver).openBrowser("https://www.mortgagecalculator.org/");
     }
 
-    public void navigateToRealAprPage(){
+    public void navigateToRealAprPage() {
         //Mouse Hover to Rates Link
-        ActOn.element(driver,RatesLink).mouseHover();
+        ActOn.element(driver, RatesLink).mouseHover();
 
         //click on real Apr Link
-        ActOn.element(driver,RealAprLink).click();
+        ActOn.element(driver, RealAprLink).click();
 
         //wait for the page to load
-        ActOn.wait(driver,CalculatorTab).waitForElementToBeVisible();
+        ActOn.wait(driver, CalculatorTab).waitForElementToBeVisible();
     }
 
-    public void enterData(){
+    public void enterData() {
         //Enter Home Price "200000"
 
-        ActOn.element(driver,HomePriceInputField).setValue("200000");
+        ActOn.element(driver, HomePriceInputField).setValue("200000");
 
         //click on the radio button of downpayment in dollar
-        ActOn.element(driver,DownPaymentInDollar).click();
+        ActOn.element(driver, DownPaymentInDollar).click();
 
         //Enter Down payment "15000"
-        ActOn.element(driver,DownPaymentInputField).setValue("15000");
+        ActOn.element(driver, DownPaymentInputField).setValue("15000");
 
         //Enter Interest Rate "3"
-        ActOn.element(driver,InterestRateInputField).setValue("3");
+        ActOn.element(driver, InterestRateInputField).setValue("3");
 
     }
+
     @Test
-    public void calculateRealApr(){
+    public void calculateRealApr() {
         navigateToRealAprPage();
         enterData();
 
         //click on calculate Button
-        ActOn.element(driver,CalculateRateButton).click();
+        ActOn.element(driver, CalculateRateButton).click();
 
         //validate the real apr rate is  "3.130"
-        String actualRealAprRate =  ActOn.element(driver,ActualAprRate).getTextValue();
-        Assert.assertEquals(actualRealAprRate,"3.130%");
+        String actualRealAprRate = ActOn.element(driver, ActualAprRate).getTextValue();
+        Assert.assertEquals(actualRealAprRate, "3.130%");
     }
 
     @AfterMethod
     public void closeBrowser(ITestResult result) throws IOException {
 
-        if(ITestResult.FAILURE == result.getStatus()){
+        if (ITestResult.FAILURE == result.getStatus()) {
             ScreenCapture.getScreenShot(driver);
         }
         ActOn.browser(driver).closeBrowser();
     }
+
 }

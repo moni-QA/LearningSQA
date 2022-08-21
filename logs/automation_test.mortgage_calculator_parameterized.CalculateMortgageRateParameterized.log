@@ -51,7 +51,7 @@
 [2022-08-20T10:33:44,556][DEBUG][Forwarding newSession on session null to remote] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
 [2022-08-20T10:33:44,737][DEBUG][Forwarding newSession on session null to remote] -Dio.netty.machineId: 64:5a:04:ff:fe:c6:8e:7a (auto-detected)
 [2022-08-20T10:33:50,137][DEBUG][main] -Dio.netty.initialSeedUniquifier: 0xc4c8e0571890bf92
-[2022-08-20T10:33:50,491][INFO ][main] -------Test: automation_test.mortgage_calculator_parameterized.CalculateMortgageRateParameterized--------
+[2022-08-20T10:33:50,491][INFO ][main] -------Test: automation_test.mortgage_calculator.CalculateRealAprRate.CalculateMortgageRateParameterized--------
 [2022-08-20T10:33:50,492][DEBUG][main] Opening the URL: https://www.mortgagecalculator.org/
 [2022-08-20T10:33:54,085][INFO ][main] Successfully Connected to the Database
 [2022-08-20T10:33:54,155][DEBUG][main] Typing Home value: 300000
@@ -70,4 +70,4 @@
 [2022-08-20T10:33:56,646][DEBUG][main] Selecting Option: Buy
 [2022-08-20T10:33:56,713][DEBUG][main] Clicking on calculate Button: 
 [2022-08-20T10:33:58,611][DEBUG][main] validating Total Monthly Payment is: 1,611.85
-[2022-08-20T10:33:59,926][INFO ][main] -------Test End: automation_test.mortgage_calculator_parameterized.CalculateMortgageRateParameterized------
+[2022-08-20T10:33:59,926][INFO ][main] -------Test End: automation_test.mortgage_calculator.CalculateRealAprRate.CalculateMortgageRateParameterized------
