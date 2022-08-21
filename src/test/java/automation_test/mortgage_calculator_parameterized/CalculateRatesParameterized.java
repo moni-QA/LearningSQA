@@ -19,6 +19,4 @@ public class CalculateRatesParameterized extends BaseClass {
                 .clickOnCalculateButton()
                 .validateRealAprRate(expectedApr);
     }
-
-
 }
