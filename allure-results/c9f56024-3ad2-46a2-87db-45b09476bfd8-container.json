@@ -1,1 +1,0 @@
-{"uuid":"c9f56024-3ad2-46a2-87db-45b09476bfd8","name":"api_test.SimpleGetTest","children":["afc4c6a3-c66c-4593-af98-70ee47a10ec0"],"befores":[{"name":"addThread","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1660610498270,"stop":1660610498270}],"afters":[],"start":1660610494490,"stop":1660610499474}
